@@ -3,14 +3,19 @@
 
 //------------------ variable ----------------
 //number
-let empty;//undefined
-let nullObject = null;
-let number = 10.33;
-let email = "helen@gmail.com"
-let flag = true;
+let empty;                   //undefined
+let nullObject = null;       //null
+let number = 10.33;          //number
+let email = "helen@gmail.com"//string
+let flag = true;             //boolean
+let summa= function(a,b){console.log(`${a} + ${b} = ${a+b}`)}
+console.log(`summa = ${summa}, type : ${typeof(summa)}`);
+summa(5,8);
+let array = [1,2,3,'red',"green", true,[10,11,12],summa];//object
 console.log(number);
 console.log(typeof(number));
 console.log(`Number = ${number}, type : ${typeof(number)}`);
+
 number = 33;
 console.log(`Number = ${number}, type : ${typeof(number)}`);
 console.log(`Email = ${email}, type : ${typeof(email)}`);
@@ -23,11 +28,9 @@ email = false;
 console.log(`Number = ${number}, type : ${typeof(number)}`);
 console.log(`Email = ${email}, type : ${typeof(email)}`);
 
-let summa= function(a,b){console.log(`${a} + ${b} = ${a+b}`)}
-console.log(`summa = ${summa}, type : ${typeof(summa)}`);
-summa(5,8);
+
 //Arrays
-let array = [1,2,3,'red',"green", true,[10,11,12],summa];
+
 console.log(`array = ${array}, type : ${typeof(array)}`);
 console.log(array[5])
 console.log(array[6][0])
@@ -48,8 +51,7 @@ console.log(`Value : ${333+10} !!!!`)
 
 //forof - get all elements in array
 for (const element of numbers) {
-    console.log(element);
-    
+    console.log(element);    
 }
 //forin - get all index of elements
 for (const index in numbers) {    
