@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>DOM</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <form>
+            <h1 class="text-center">Create New Product</h1>
+            <fieldset>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="modelInput" class="form-label mt-4">Model</label>
+                        <input type="text" class="form-control" id="modelInput" placeholder="Enter model">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                   
+                    <div class="col-6">
+                        <label for="inputDescr" class="form-label mt-4">Description</label>
+                        <input type="text" class="form-control" id="inputDescr" placeholder="Description"
+                            autocomplete="off">
+                    </div>
+                     <div class="col-2">
+                        <label for="priceInput" class="form-label mt-4">Price</label>
+                        <input type="number" class="form-control" id="priceInput" placeholder="Enter price">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4">Create</button>
+            </fieldset>
+        </form>
+
+        <h2 class="text-center mt-3">Product List</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>              
+                <tr class="table-light">
+                    <th scope="row">1</th>
+                    <td>Motorola</td>
+                    <td>Some phone</td>
+                    <td>7500</td>
+                </tr>
+                  <tr class="table-light">
+                    <th scope="row">2</th>
+                    <td>Redmi</td>
+                    <td>Redmo phone</td>
+                    <td>5000</td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>
